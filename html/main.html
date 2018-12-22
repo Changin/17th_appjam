@@ -48,16 +48,27 @@
             </div>
             <div id="s_d">
                 <ul>
-                    <li><a href="#">#13~16세</a>
+                    <li class="nnnn"><a href="#">#13~16세</a>
                         <p>▼</p>
                         <ul>
-                            <li><a href="#">#국어</a></li>
-                            <li><a href="#">#수학</a></li>
-                            <li><a href="#">#영어</a></li>
+                            <li class="ss"><a href="#">#국어</a></li>
+                            <li class="ss"><a href="#">#수학</a></li>
+                            <li class="ss"><a href="#">#영어</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $(".ss").hide();
+                    $(".nnnn").click(function(){
+                        $(".ss").show();
+                        // $(".nnnn").toggle();
+                    // $('#leftmenuArea').animate({width:'toggle'});
+                 })
+        
+            })
+            </script>
         </div>
     </div>
 
@@ -92,7 +103,7 @@
             아이콘
         </div>
         <div id="m_bo2">
-
+            <p class="m_bo2_p">+</p>
         </div>
     </div>
 </body>
