@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "namB";
+    src: url(/fonts/NanumSquareB.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "namR";
+    src: url(/fonts/NanumSquareR.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#l_icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcf00;
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    border-radius:75px;
+    text-align:center;
+    /* font-size:12px; */
+    vertical-align:middle;
+    /* line-height:150px; */
+}
+
+#l_input {
+    width: 350px;
+    height: auto;
+    margin: auto;
+}
+
+#l_input input {
+    width: 348px;
+    height: 50px;
+    margin-top: 15px;
+    /* margin: auto; */
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    background-color: #0000000d;
+    outline: none;
+    padding-left: 30px;
+    /* text-align: right; */
+}
+
+#l_input input::placeholder {
+    font-family: 'namR';
+}
+
+#l_submit {
+    font-family: 'namB';
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: auto;
+}
+
+#l_submit button {
+    width: 348px;
+    height: 50px;
+    border: 1px solid #ffcf00;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #ffcf00;
+    outline: none;
+    cursor: pointer;
+}
+
+#l_submit p {
+    width: 350px;
+    height: 30px;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}

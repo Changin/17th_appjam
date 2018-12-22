@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div id="l_icon">
+            
+        </div>
+        <form method="POST">
+            {% csrf_token %}
+            <div id="l_input">
+                <input type="text" name="username" id="username" placeholder="아이디"><!--아이디 입력-->
+                <input type="password" name="password" id="password" placeholder="비밀번호"> <!--비밀번호 입력-->
+            </div>
+            <div id="l_submit">
+                <button type="submit">로그인</button> <!--전송-->
+                <a href="#"><p>회원가입하기</p></a> <!-- 회원가입 페이지 이동-->
+            </div>
+            {% if form.errors %}
+            <p class=" label label-danger">
+                Your username and password didn't match. 
+                Please try again.
+            </p>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
