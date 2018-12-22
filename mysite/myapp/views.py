@@ -5,12 +5,47 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth import authenticate, login, logout
 from django.http import *
+from django.db.models import Q
 
 # Create your views here.
 @login_required
-def index(request):
+def index(request, board_id):
+	board_name = Board.objects.get(id=board_id)
+	posts = []
+	if(board_name):
+		posts = Post.objects.filter(category__category=board_name.category).order_by('-created_date')
+
 	username = request.user.username
-	return render(request, 'myapp/index.html', {'username' : username})
+	
+	boards = []
+	board1 = Board.objects.filter(age=1)
+	board2 = Board.objects.filter(age=2)
+	board3 = Board.objects.filter(age=3)
+
+	hashtags = Post.objects.exclude(
+      Q(hashtag__isnull=True)|Q(hashtag='')
+    ).values_list('hashtag', flat=True).distinct()
+	
+	age = request.user.age
+	userage = ""
+	if (age <= 16):
+		userage = "#13-16세"
+		boards = [board1, board2, board3]
+	elif (age <= 19):
+		userage = "#17-19세"
+		boards = [board2, board3, board1]
+	else:
+		userage = "#20-24세"
+		boards = [board3, board2, board1]
+
+	context = {
+		'username' : username, 
+		'userage' : userage,
+		'boards' : boards,
+		'hashtags' : hashtags,
+		'posts' : posts,
+	}
+	return render(request, 'myapp/main.html', context)
 
 def login_user(request):
     logout(request)

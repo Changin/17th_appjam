@@ -24,6 +24,8 @@ class Post(models.Model):
 	created_date = models.DateTimeField(default=timezone.now)
 	published_date = models.DateTimeField(blank=True, null=True)
 
+	#photo = models.CharField(max_length=200, default="#") #사진 주소
+
 	def __str__(self):
 		return self.title
 
