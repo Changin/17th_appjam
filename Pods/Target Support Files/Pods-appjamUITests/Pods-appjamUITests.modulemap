@@ -1,0 +1,6 @@
+framework module Pods_appjamUITests {
+  umbrella header "Pods-appjamUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
