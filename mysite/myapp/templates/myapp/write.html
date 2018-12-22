@@ -18,12 +18,12 @@
 <body>
     <div class="container">
         <div class="w_header">
-            <a href="#" class="p_pre"><p><</p></a>
+            <a href="../index/0/" class="p_pre"><p><</p></a>
             <button type="submit" id="w_su" onclick="a()">완료</button>
         </div>
         <div id="write1">
             <input type="text" placeholder="구체적인 제목을 입력해주세요.">
-            <textarea id="" cols="44" rows="5" placeholder="본문을 입력해주세요."></textarea>
+            <textarea id="" cols="39" rows="5" placeholder="본문을 입력해주세요."></textarea>
         </div>
         <img id="blah">
         <div id="write_img_box">
@@ -34,7 +34,7 @@
         <script type="text/javascript">
             function a(){
                 alert("등록되었습니다.");
-                location.href="{% url index/0 %}";
+                location.href="../index/0";
             }
             $(function() {
                 $("#photo_in").on('change', function(){
@@ -47,7 +47,7 @@
                 var reader = new FileReader();
     
                 reader.onload = function (e) {
-                        $('#blah').attr('src', "{% static 'images/cak.jpg' %}");
+                        $('#blah').attr('src', "{% static 'images/mains.jpg' %}");
                     }
     
                   $("#write_img").css("display", "none");

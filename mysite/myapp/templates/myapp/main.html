@@ -118,10 +118,15 @@
     </div>
     <div class="container-fluid" id="m_box">
         <div id="m_bo">
-            아이콘
+            <div class="n_icon_l"><a href="{% url 'date_picker' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_CALENDAR.jpg' %}" alt="달력"></a></div>
+            <div class="n_icon_l"><a href="{% url 'post' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_OPEN.png' '%}" alt="글보기"></a> </div>
+            <div class="n_icon_r"><a href="{% url 'write' %}"><img class="n_icon_img" src="{% static 'images/aa.png' %}" alt="글쓰기"></a></div>
+            <div class="n_icon_r"><a href="{% url 'clock' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_STOPWATCH.png' %}" alt="스톱워치"></a> </div>
         </div>
-        <div id="m_bo2">
-            <p class="m_bo2_p">+</p>
+        <div id=m_boxs>
+          <div id="m_bo2">
+              <div class="n_cen"><a href="../../index/0/"><img src="{% static 'images/아이콘/ICON_HOME.png' %}" alt="홈"></a> </div>
+          </div>
         </div>
     </div>
 </body>

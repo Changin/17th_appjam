@@ -1,6 +1,6 @@
 @font-face {
     font-family: "namR";
-    src: url(fonts/NanumSquareR.ttf) format("truetype");
+    src: url(/17th_appjam/fonts/NanumSquareR.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -123,6 +123,7 @@
     color: #ffffff;
     width: 240px;
     margin-left: 10px;
+    float: left;
 }
 
 .m_bo2_p input {
@@ -137,3 +138,15 @@
     width: 10px;
     height: 10px;
 } */
+
+.s_imgg{
+    float: right;
+    width: 40px;
+    margin-left: 33px;
+}
+
+#m_bo2 button {
+    background-color: #ffffff00;
+    border: 0;
+    outline: none;
+}
