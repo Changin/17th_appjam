@@ -9,4 +9,6 @@ urlpatterns = [
     path('date/', views.date, name='date_picker'),
     path('clock/', views.clock, name='clock'),
     path('post/', views.post, name='post'),
+    path('register/', views.register, name='register'),
+    path('write/', views.register, name='write'),
 ]

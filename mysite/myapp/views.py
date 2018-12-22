@@ -9,6 +9,10 @@ from django.db.models import Q
 
 # Create your views here.
 @login_required
+def write(request):
+	return render(request, 'myapp/write.html', {})
+
+@login_required
 def date(request): #일정
 	return render(request, 'myapp/date-picker.html', {})
 
@@ -63,6 +67,9 @@ def index(request, board_id):
 	}
 	return render(request, 'myapp/main.html', context)
 
+def register(request):
+	return render(request, 'myapp/register.html', {})
+
 def login_user(request):
     logout(request)
     username = password = ''
@@ -74,5 +81,5 @@ def login_user(request):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect('/0')
+                return HttpResponseRedirect('/index/0')
     return render(request,'myapp/login.html')
