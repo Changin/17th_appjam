@@ -166,3 +166,58 @@
     font-family: 'namR';
     font-size: 25px;
 }
+
+.n_icon_l {
+    /* background-color: #97/9797; */
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 150px;
+    margin-top: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.n_icon_r {
+    /* background-color: #97/9797; */
+    width: 15px;
+    height: 50px;
+    float: right;
+    margin-right: 155px;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.n_icon_img {
+    width: 100px;
+    height: 100px;
+}
+
+#m_box {
+    position: absolute;
+    bottom: 0px;
+    width: 970px;
+    height: 132px;
+    background-color: #f8f8f8;
+}
+
+#m_bo2{
+    position: absolute;
+    bottom: -35px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffcf00;
+    border-radius: 75px;
+    background-color: #ffcf00;
+    margin: auto;
+    left: 415px;
+    /* background-color: blue; */
+}
+
+#m_boxs {
+    /* width: 100%; */
+    /* height: 100px; */
+    /* background-color: red; */
+    position: fixed;
+}
