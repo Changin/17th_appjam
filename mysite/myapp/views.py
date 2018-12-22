@@ -62,5 +62,5 @@ def login_user(request):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect('/')
+                return HttpResponseRedirect('/0')
     return render(request,'myapp/login.html')
