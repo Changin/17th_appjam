@@ -68,7 +68,7 @@
                         <ul>
                             {% for j in board %}
                             <li class="ss">
-                                <a href="/{{ j.id }}/">
+                                <a href="/index/{{ j.id }}/">
                                     {{ j.category }}
                                 </a>
                             </li>
@@ -109,7 +109,7 @@
                     <div class="card-body">
                         <p class="card-title">{{ post.author }}</p>
                         <h3 class="card-text">{{ post.title }}</h3>
-                        <img src="/17th_appjam/img/main.jpg" alt="main" class="card-img-bottom m_img">
+                        <img src="{% static 'images/main.jpg' %}" alt="main" class="card-img-bottom m_img">
                     </div>
                 </div>
             </div>

@@ -9,6 +9,18 @@ from django.db.models import Q
 
 # Create your views here.
 @login_required
+def date(request): #일정
+	return render(request, 'myapp/date-picker.html', {})
+
+@login_required
+def clock(request): #스톱워치
+	return render(request, 'myapp/clock.html', {})
+
+@login_required
+def post(request): #게시물 댓글
+	return render(request, 'myapp/post.html', {})
+
+@login_required
 def index(request, board_id):
 
 	posts = []

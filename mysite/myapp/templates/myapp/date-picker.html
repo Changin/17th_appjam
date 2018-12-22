@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>달력</title>
-    <link rel="stylesheet" href="/17th_appjam/css/nice-date-picker.css">
-    <script src="/17th_appjam/js/nice-date-picker.js"></script>
+    <link rel="stylesheet" href="{% static 'css/nice-date-picker.css' %}">
+    <script src="{% static 'js/nice-date-picker.js' %}" type="text/javascript"></script>
 </head>
 <body>
 <div class="container">
@@ -28,7 +29,7 @@
         dom:document.getElementById('calendar1-wrapper1'),
         onClickDate:function(date){
             document.querySelector('.calendar1-msg').innerHTML='calendar1 your selected '+date;
-        }
+        }x                                                                                    
     });
 </script>
 </body>

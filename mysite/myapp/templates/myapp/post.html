@@ -1,3 +1,4 @@
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +14,7 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript" ></script>
 
-    <link rel="stylesheet" href="/17th_appjam/css/post.css">
+    <link rel="stylesheet" href="{% static 'css/post.css' %}">
 </head>
 <body>
     <div class="container">
@@ -23,7 +24,7 @@
         <!-- 작성자 -->
         <p class="p_au">김관자</p>
         <!-- 사진 -->
-        <img src="/17th_appjam/img/main.jpg" alt="main" id="p_img">
+        <img src="{% static 'images/main.jpg' %}" alt="main" id="p_img">
 
         <!-- 내용 -->
         <p id="p_expl">누가 도와주세요<br />어케 하는걸까요?<br /> 조금 눈문링 아러ㅏ이ㅠㅏㅓㄹ<br />그렇ㅔㄴㅇㅅ</p>
@@ -50,7 +51,7 @@
         </div>
         <div class="p_answer">
             <p>거그 맞아</p>
-            <img src="/17th_appjam/img/main.jpg" alt="main" id="p_answer_img">
+            <img src="{% static 'images/main.jpg' %}" alt="main" id="p_answer_img">
         </div>
     </div>
     <div class="container-fluid" id="m_box">
