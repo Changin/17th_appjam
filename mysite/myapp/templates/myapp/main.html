@@ -54,7 +54,7 @@
             <div id="s_d">
                 <ul>
                     {% for board in boards %}
-                    <li>
+                    <li class="nnnn">
                         <a href="#">
                             {% if board.0.age == 1 %}
                                 #13-16세
@@ -67,7 +67,7 @@
                         <p>▼</p>
                         <ul>
                             {% for j in board %}
-                            <li>
+                            <li class="ss">
                                 <a href="/{{ j.id }}/">
                                     {{ j.category }}
                                 </a>
@@ -78,6 +78,17 @@
                     {% endfor %}
                 </ul>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $(".ss").hide();
+                    $(".nnnn").click(function(){
+                        $(".ss").show();
+                        // $(".nnnn").toggle();
+                    // $('#leftmenuArea').animate({width:'toggle'});
+                 })
+        
+            })
+            </script>
         </div>
     </div>
 
@@ -110,7 +121,7 @@
             아이콘
         </div>
         <div id="m_bo2">
-
+            <p class="m_bo2_p">+</p>
         </div>
     </div>
 </body>
