@@ -177,6 +177,7 @@ body {
     list-style: none;
     color: #969696;
     padding: 0;
+    border-radius: 10px;
 }
 
 #s_d ul li ul {
@@ -211,7 +212,7 @@ body {
 
 #m_bo2{
     position: absolute;
-    bottom: 32px;
+    bottom: 27px;
     width: 60px;
     height: 60px;
     border: 1px solid #ffcf00;
