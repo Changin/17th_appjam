@@ -1,13 +1,13 @@
 @font-face {
     font-family: "namB";
-    src: url(/fonts/NanumSquareB.ttf) format("truetype");
+    src: url(fonts/NanumSquareB.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "namR";
-    src: url(/fonts/NanumSquareR.ttf) format("truetype");
+    src: url(fonts/NanumSquareR.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
