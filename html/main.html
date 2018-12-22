@@ -18,12 +18,12 @@
     <script>
         $(document).ready(function(){
             $("#leftmenuArea").hide();
-            // $("#pos").show();
-            // $("#m_hss").show();
+            $("#pos").show();
+            $("#m_hss").show();
             $(".siteMapBtn>img").click(function(){
                 $(".siteMapBtn>img").toggle();
-                $("#pos").hide();
-                $("#m_hss").hide();
+                $("#pos").toggle();
+                $("#m_hss").toggle();
                 // $("#pos").show();
                 // $("#m_hss").show();
             $('#leftmenuArea').animate({width:'toggle'});
@@ -91,8 +91,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div>
+    <div class="container-fluid" id="m_box">
+        <div id="m_bo">
+            아이콘
+        </div>
+        <div id="m_bo2">
 
         </div>
     </div>
