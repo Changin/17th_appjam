@@ -10,10 +10,14 @@ from django.db.models import Q
 # Create your views here.
 @login_required
 def index(request, board_id):
-	board_name = Board.objects.get(id=board_id)
+
 	posts = []
-	if(board_name):
-		posts = Post.objects.filter(category__category=board_name.category).order_by('-created_date')
+	if(board_id != 0):
+		board_name = Board.objects.get(id=board_id)
+	else:
+		board_name = Board.objects.get(id=1)
+
+	posts = Post.objects.filter(category__category=board_name.category).order_by('-created_date')
 
 	username = request.user.username
 	
