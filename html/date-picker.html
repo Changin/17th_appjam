@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>달력</title>
+    <link rel="stylesheet" href="/17th_appjam/css/nice-date-picker.css">
+    <script src="/17th_appjam/js/nice-date-picker.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="calendar1">
+        <div id="calendar1-wrapper1"></div>
+        <!-- <span class="calendar1-msg"></span> -->
+        <!-- 알림?창 밑에부터 -->
+        <div class="d_sc">
+            <div id="dot">
+                <div id="dot_ex"> <p></p> </div>
+            </div>
+            <div id="el_s">
+                <p id="el_s_p">09 AM - 11 AM</p>
+                <p id="el_s_p1">여기서부터 여기까지</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    new niceDatePicker({
+        dom:document.getElementById('calendar1-wrapper1'),
+        onClickDate:function(date){
+            document.querySelector('.calendar1-msg').innerHTML='calendar1 your selected '+date;
+        }
+    });
+</script>
+</body>
+</html>

@@ -141,7 +141,7 @@ body {
 
 #s_d {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: #e4e4e4; 
 }
 
@@ -191,6 +191,7 @@ body {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     /* margin-bottom: 15px; */
 }
 
@@ -199,24 +200,31 @@ body {
 #m_bo {
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: #ffffff;
     position: fixed;
 }
 
 #m_box {
     position: absolute;
-    bottom: 65px;
+    bottom: 36px;
 }
 
 #m_bo2{
     position: absolute;
-    bottom: -35px;
-    width: 100px;
-    height: 100px;
+    bottom: 32px;
+    width: 60px;
+    height: 60px;
     border: 1px solid #ffcf00;
     border-radius: 75px;
     background-color: #ffcf00;
     margin: auto;
-    left: 144px;
+    left: 158px;
+    position: fixed;
     /* background-color: blue; */
+}
+
+.m_bo2_p {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
 }
