@@ -13,9 +13,11 @@
 }
 
 #l_icon {
-    width: 100px;
+    width: 173px;
     height: 100px;
-    background-color: #ffcf00;
+    /* background-color: #ffcf00; */
+    background-image: url(/17th_appjam/img/logo.png);
+    background-size: cover;
     margin-top: 105px;
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +64,7 @@
 
 #l_submit button {
     width: 348px;
+    font-size: 30px;
     height: 50px;
     border: 1px solid #ffcf00;
     border-radius: 50px;
