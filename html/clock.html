@@ -127,6 +127,7 @@
           SETTINGS.progress = timestamp - SETTINGS.start;
           SETTINGS.timerId = window.requestAnimationFrame(startTimer);
           TIME_DISPLAY.textContent = getDisplay();
+          webkit.messageHandlers.callbackHandler.postMessage("Messagebody")
         }
       
         function pauseTimer() {
