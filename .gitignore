@@ -1,2 +1,3 @@
 appjam_venv/
 .DS_Store
+*.pyc
