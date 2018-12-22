@@ -2,8 +2,16 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 
+#유저 테이블
 class MyUser(AbstractUser):
 	age = models.IntegerField(null=False, blank=False, default=0)
+	profile_link = models.CharField(max_length=200, default='')
+
+#댓글 테이블
+class Commnt(models.Model):
+	link = models.ForeignKey('Post', on_delete=models.CASCADE) #글 링크
+	author = models.ForeignKey('MyUser', on_delete=models.CASCADE) #작성자
+	context = models.TextField() #댓글 내용
 
 # 게시글 테이블
 class Post(models.Model):
@@ -23,6 +31,7 @@ class Post(models.Model):
 		self.published_date = timezone.now()
 		self.save()
 
+#일정 테이블
 class Schedule(models.Model):
 	author = models.ForeignKey('MyUser', on_delete=models.CASCADE)
 	title = models.CharField(max_length=200)
@@ -33,6 +42,7 @@ class Schedule(models.Model):
 	def __str__(self):
 		return self.title
 
+#게시판
 class Board(models.Model):
 	category = models.CharField(max_length=200, unique=True) #카테고리
 	context = models.CharField(max_length=200) #게시판 설명
