@@ -64,6 +64,7 @@
 
 #l_submit button {
     width: 348px;
+    font-size: 30px;
     height: 50px;
     border: 1px solid #ffcf00;
     border-radius: 50px;
