@@ -54,7 +54,7 @@
             <div id="s_d">
                 <ul>
                     {% for board in boards %}
-                    <li>
+                    <li class="nnnn">
                         <a href="#">
                             {% if board.0.age == 1 %}
                                 #13-16세
@@ -67,8 +67,8 @@
                         <p>▼</p>
                         <ul>
                             {% for j in board %}
-                            <li>
-                                <a href="/{{ j.id }}/">
+                            <li class="ss">
+                                <a href="/index/{{ j.id }}/">
                                     {{ j.category }}
                                 </a>
                             </li>
@@ -78,6 +78,17 @@
                     {% endfor %}
                 </ul>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $(".ss").hide();
+                    $(".nnnn").click(function(){
+                        $(".ss").show();
+                        // $(".nnnn").toggle();
+                    // $('#leftmenuArea').animate({width:'toggle'});
+                 })
+        
+            })
+            </script>
         </div>
     </div>
 
@@ -98,7 +109,7 @@
                     <div class="card-body">
                         <p class="card-title">{{ post.author }}</p>
                         <h3 class="card-text">{{ post.title }}</h3>
-                        <img src="/17th_appjam/img/main.jpg" alt="main" class="card-img-bottom m_img">
+                        <img src="{% static 'images/main.jpg' %}" alt="main" class="card-img-bottom m_img">
                     </div>
                 </div>
             </div>
@@ -107,10 +118,15 @@
     </div>
     <div class="container-fluid" id="m_box">
         <div id="m_bo">
-            아이콘
+            <div class="n_icon_l"><a href="{% url 'date_picker' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_CALENDAR.jpg' %}" alt="달력"></a></div>
+            <div class="n_icon_l"><a href="{% url 'post' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_OPEN.png' '%}" alt="글보기"></a> </div>
+            <div class="n_icon_r"><a href="{% url 'write' %}"><img class="n_icon_img" src="{% static 'images/aa.png' %}" alt="글쓰기"></a></div>
+            <div class="n_icon_r"><a href="{% url 'clock' %}"><img class="n_icon_img" src="{% static 'images/아이콘/ICON_STOPWATCH.png' %}" alt="스톱워치"></a> </div>
         </div>
-        <div id="m_bo2">
-
+        <div id=m_boxs>
+          <div id="m_bo2">
+              <div class="n_cen"><a href="../../index/0/"><img src="{% static 'images/아이콘/ICON_HOME.png' %}" alt="홈"></a> </div>
+          </div>
         </div>
     </div>
 </body>

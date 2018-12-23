@@ -24,11 +24,8 @@
                 $(".siteMapBtn>img").toggle();
                 $("#pos").toggle();
                 $("#m_hss").toggle();
-                // $("#pos").show();
-                // $("#m_hss").show();
+                $("#m_box").toggle();
             $('#leftmenuArea').animate({width:'toggle'});
-            // $("#pos").show();
-            // $("#m_hss").show();
             })
         
         })
@@ -52,16 +49,27 @@
             </div>
             <div id="s_d">
                 <ul>
-                    <li><a href="#">#13~16세</a>
+                    <li class="nnnn"><a href="#">#13~16세</a>
                         <p>▼</p>
                         <ul>
-                            <li><a href="#">#국어</a></li>
-                            <li><a href="#">#수학</a></li>
-                            <li><a href="#">#영어</a></li>
+                            <li class="ss"><a href="#">#국어</a></li>
+                            <li class="ss"><a href="#">#수학</a></li>
+                            <li class="ss"><a href="#">#영어</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $(".ss").hide();
+                    $(".nnnn").click(function(){
+                        $(".ss").show();
+                        // $(".nnnn").toggle();
+                    // $('#leftmenuArea').animate({width:'toggle'});
+                 })
+        
+            })
+            </script>
         </div>
     </div>
 
@@ -91,12 +99,17 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" id="m_box">
+    <div id="m_box">
         <div id="m_bo">
-            아이콘
+            <div class="n_icon_l"><a href="#"><img class="n_icon_img" src="/17th_appjam/img/아이콘/ICON_CALENDAR.jpg" alt="달력"></a></div>
+            <div class="n_icon_l"><a href="#"><img class="n_icon_img" src="/17th_appjam/img/아이콘/ICON_OPEN.png" alt="글보기"></a> </div>
+            <div class="n_icon_r"><a href="#"><img class="n_icon_img" src="/17th_appjam/img/아이콘/ICON_ME.png" alt="마이홈"></a></div>
+            <div class="n_icon_r"><a href="#"><img class="n_icon_img" src="/17th_appjam/img/아이콘/ICON_STOPWATCH.png" alt="스톱워치"></a> </div>
         </div>
-        <div id="m_bo2">
-
+        <div id=m_boxs>
+          <div id="m_bo2">
+              <div class="n_cen"><a href="#"><img src="/17th_appjam/img/아이콘/ICON_HOME.png" alt="홈"></a> </div>
+          </div>
         </div>
     </div>
 </body>

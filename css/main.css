@@ -141,7 +141,7 @@ body {
 
 #s_d {
     width: 100%;
-    height: 1000px;
+    height: 800px;
     background-color: #e4e4e4; 
 }
 
@@ -177,6 +177,7 @@ body {
     list-style: none;
     color: #969696;
     padding: 0;
+    border-radius: 10px;
 }
 
 #s_d ul li ul {
@@ -191,15 +192,15 @@ body {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     /* margin-bottom: 15px; */
 }
 
 /* ===================바닥 */
-
 #m_bo {
     width: 100%;
     height: 100px;
-    background-color: red;
+    background-color: #e4e4e4;
     position: fixed;
 }
 
@@ -211,12 +212,58 @@ body {
 #m_bo2{
     position: absolute;
     bottom: -35px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border: 1px solid #ffcf00;
     border-radius: 75px;
     background-color: #ffcf00;
     margin: auto;
     left: 144px;
     /* background-color: blue; */
+}
+
+#m_boxs {
+    /* width: 100%; */
+    /* height: 100px; */
+    /* background-color: red; */
+    position: fixed;
+}
+
+.m_bo2_p {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.n_icon_l {
+    /* background-color: #97/9797; */
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 39px;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.n_icon_r {
+    /* background-color: #97/9797; */
+    width: 15px;
+    height: 50px;
+    float: right;
+    margin-right: 61px;
+    margin-top: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.n_icon_img {
+    width: 50px;
+    height: 50px;
+}
+
+.n_cen {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
 }

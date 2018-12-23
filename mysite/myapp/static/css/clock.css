@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "namR";
+    src: url(/17th_appjam/fonts/NanumSquareR.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f8f8f8;
+
+}
+
+#c_title {
+    /* background-color: red; */
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 2px 2px 8px #e4e4e4;
+}
+
+#c_show {
+    width: 100%;
+    height: 70px;
+    background-color: #f8f8f8;
+}
+
+.time{
+    font-family: 'namR';
+    width: 345px;
+    height: 70px;
+    /* color: #c0c0c0; */
+    font-size: 55px;
+    margin: auto;
+}
+
+.time p {
+    width: 313px;
+    margin: auto;
+    color: #646464;
+}
+
+#c_btus {
+    width: 282px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;;
+}
+
+.c_btu {
+    width: 130px;
+    border: 1px solid #e4e4e4;
+    color: #828282;
+    background-color: #ffffff;
+    border-radius: 50px;
+    height: 37px;
+    margin: auto;
+    outline: none;
+    box-shadow: 2px 2px 8px #bcbcbc;
+}
+
+.lap {
+    margin-top: 20px;
+    width: 262px;
+    border: 1px solid #ffcf00;
+    /* color: #969696; */
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: #ffcf00;
+    height: 37px;
+    box-shadow: 2px 2px 5px #bcbcbc;
+    outline: none;
+}
+
+.start {
+    margin-right: 5px;
+}
+
+.laps {
+    margin-top: 23px;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    width: 350px;
+}
+
+#laps_i {
+    padding: 0;
+}
+
+.laps li {
+    width:auto;
+    height: 45px;
+    line-height: 41px;
+
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+/* ==========================================바닥===== */
+
+/* ===================바닥 */
+#m_bo {
+    width: 100%;
+    height: 100px;
+    background-color: #e4e4e4;
+    position: fixed;
+}
+
+#m_box {
+    position: absolute;
+    bottom: 65px;
+}
+
+#m_bo2{
+    position: absolute;
+    bottom: -35px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ffcf00;
+    border-radius: 75px;
+    background-color: #ffcf00;
+    margin: auto;
+    left: 144px;
+    /* background-color: blue; */
+}
+
+#m_boxs {
+    /* width: 100%; */
+    /* height: 100px; */
+    /* background-color: red; */
+    position: fixed;
+}
+
+.m_bo2_p {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.n_icon_l {
+    /* background-color: #97/9797; */
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-right: 8px;
+    margin-top: 18px;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.n_icon_r {
+    /* background-color: #97/9797; */
+    width: 15px;
+    height: 50px;
+    float: right;
+    margin-right: 55px;
+    margin-top: 19px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.n_icon_img {
+    width: 25px;
+    height: 25px;
+}
+
+.n_cen {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.n_cen a img {    
+    width: 35px;
+    margin-left: 12px;
+    margin-top: 18px;
+}

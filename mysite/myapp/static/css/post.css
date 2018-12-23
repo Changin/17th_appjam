@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "namR";
+    src: url(/17th_appjam/fonts/NanumSquareR.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p_pre {
+    font-size: 35px;
+    color: #bcbcbc;
+    cursor: pointer;
+}
+
+#p_title {
+    font-family: 'namR';
+    margin-bottom: 3px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #646464;
+}
+
+#p_img {
+    width: 344px;
+    height: 167px;
+}
+
+.p_au {
+    font-family: 'namR';
+    font-size: 20px;
+    color: #969696;
+}
+
+#p_expl {
+    margin-top: 20px;
+}
+
+#m_hss {
+    width: 350px;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: blue; */
+}
+
+.m_hs {
+    width: auto;
+    background-color: red;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #ffcf00;
+    background-color: #ffcf00;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 5px;
+    padding: 17px 10px 2px 10px;
+}
+
+.p_con_box {
+    width: 344px;
+    /* background-color: red; */
+    height: 62px;
+    margin-top: 60px;
+}
+
+.p_con_user {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border: 1px solid #969696;
+    background-color: #969696;
+    border-radius: 75px;
+    float: left;
+}
+
+.p_con_user_n {
+    width: 128px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 17px;
+}
+
+.p_con_user_1{
+    float: left;
+    border-right: 1px solid #bcbcbc;
+    padding-right: 10px;
+}
+
+.p_con_time {
+    padding-left: 10px;
+    float: right;
+}
+
+.p_answer {
+    float: right;
+    margin-bottom: 30px;
+}
+
+#p_answer_img {
+    width: 280px;
+    height: 160px;
+}
+
+#m_bo2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d8d8d8;
+    border-radius: 0;
+    background-color: #d8d8d8;
+    margin: auto;
+    left: 0;
+    position: fixed;
+    /* background-color: blue; */
+}
+
+.m_bo2_p {
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    width: 240px;
+    margin-left: 10px;
+    float: left;
+}
+
+.m_bo2_p input {
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 100%;
+
+}
+
+/* .s_cc {
+    width: 10px;
+    height: 10px;
+} */
+
+.s_imgg{
+    float: right;
+    width: 40px;
+    margin-left: 33px;
+}
+
+#m_bo2 button {
+    background-color: #ffffff00;
+    border: 0;
+    outline: none;
+}
